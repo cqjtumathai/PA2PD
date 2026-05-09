@@ -1,0 +1,97 @@
+Thu 07 May 2026 21:33:29 INFO ██Server: 	ps
+Thu 07 May 2026 21:33:29 INFO ██Dir: 	/mnt/sda/XT/MENTOR_Firstpaper/src
+
+Thu 07 May 2026 21:33:29 INFO Start 0-th training!!
+Thu 07 May 2026 21:33:29 INFO baby
+The number of users: 19445
+Average actions of users: 8.269066598097197
+The number of items: 7050
+Average actions of items: 22.807375886524824
+The number of inters: 160792
+The sparsity of the dataset: 99.8827082752043%
+Thu 07 May 2026 21:33:29 INFO 
+====Training====
+baby
+The number of users: 19445
+Average actions of users: 6.096734379017742
+The number of items: 7047
+Average actions of items: 16.82290336313325
+The number of inters: 118551
+The sparsity of the dataset: 99.9134846831415%
+Thu 07 May 2026 21:33:29 INFO 
+====Validation====
+baby
+The number of users: 19445
+Average actions of users: 1.0572897917202366
+The number of items: 5483
+Average actions of items: 3.749589640707642
+The number of inters: 20559
+The sparsity of the dataset: 99.98071694707788%
+Thu 07 May 2026 21:33:29 INFO 
+====Testing====
+baby
+The number of users: 19445
+Average actions of users: 1.1150424273592183
+The number of items: 5549
+Average actions of items: 3.907370697422959
+The number of inters: 21682
+The sparsity of the dataset: 99.97990552482683%
+Thu 07 May 2026 21:33:30 INFO 
+
+=================================
+
+
+Thu 07 May 2026 21:33:30 INFO =========1/1: Parameters:['reg_weight', 'learning_rate', 'dropout', 'mask_weight_g', 'align_weight', 'temp', 'seed']=(0.001, 0.0001, 0.5, 0.001, 0.1, 0.2, 999)=======
+Thu 07 May 2026 21:33:34 INFO PA2PD(
+  (mlp): Linear(in_features=128, out_features=128, bias=True)
+  (image_embedding): Embedding(7050, 4096)
+  (image_trs): Linear(in_features=4096, out_features=64, bias=True)
+  (text_embedding): Embedding(7050, 384)
+  (text_trs): Linear(in_features=384, out_features=64, bias=True)
+  (MLP_user): Linear(in_features=128, out_features=64, bias=True)
+  (v_gcn): GCN(
+    (MLP): Linear(in_features=4096, out_features=256, bias=True)
+    (MLP_1): Linear(in_features=256, out_features=64, bias=True)
+    (conv_embed_1): Base_gcn(64, 64)
+  )
+  (v_gcn_n1): GCN(
+    (MLP): Linear(in_features=4096, out_features=256, bias=True)
+    (MLP_1): Linear(in_features=256, out_features=64, bias=True)
+    (conv_embed_1): Base_gcn(64, 64)
+  )
+  (v_gcn_n2): GCN(
+    (MLP): Linear(in_features=4096, out_features=256, bias=True)
+    (MLP_1): Linear(in_features=256, out_features=64, bias=True)
+    (conv_embed_1): Base_gcn(64, 64)
+  )
+  (t_gcn): GCN(
+    (MLP): Linear(in_features=384, out_features=256, bias=True)
+    (MLP_1): Linear(in_features=256, out_features=64, bias=True)
+    (conv_embed_1): Base_gcn(64, 64)
+  )
+  (t_gcn_n1): GCN(
+    (MLP): Linear(in_features=384, out_features=256, bias=True)
+    (MLP_1): Linear(in_features=256, out_features=64, bias=True)
+    (conv_embed_1): Base_gcn(64, 64)
+  )
+  (t_gcn_n2): GCN(
+    (MLP): Linear(in_features=384, out_features=256, bias=True)
+    (MLP_1): Linear(in_features=256, out_features=64, bias=True)
+    (conv_embed_1): Base_gcn(64, 64)
+  )
+  (id_gcn): GCN(
+    (MLP): Linear(in_features=64, out_features=256, bias=True)
+    (MLP_1): Linear(in_features=256, out_features=64, bias=True)
+    (conv_embed_1): Base_gcn(64, 64)
+  )
+  (mlp_1): Linear(in_features=128, out_features=1, bias=True)
+)
+Trainable parameters: 44685247
+Thu 07 May 2026 21:33:39 INFO epoch 0 training [time: 4.74s, train loss: 64.7330]
+Thu 07 May 2026 21:33:42 INFO epoch 0 evaluating [time: 1.90s, valid_score: 0.031200]
+Thu 07 May 2026 21:33:42 INFO valid result: 
+recall@5: 0.0202    recall@10: 0.0312    recall@20: 0.0504    recall@50: 0.0930    ndcg@5: 0.0130    ndcg@10: 0.0165    ndcg@20: 0.0213    ndcg@50: 0.0298    precision@5: 0.0042    precision@10: 0.0033    precision@20: 0.0027    precision@50: 0.0020    map@5: 0.0104    map@10: 0.0118    map@20: 0.0131    map@50: 0.0144    
+Thu 07 May 2026 21:33:42 INFO test result: 
+recall@5: 0.0193    recall@10: 0.0310    recall@20: 0.0500    recall@50: 0.0950    ndcg@5: 0.0127    ndcg@10: 0.0166    ndcg@20: 0.0215    ndcg@50: 0.0305    precision@5: 0.0042    precision@10: 0.0034    precision@20: 0.0028    precision@50: 0.0021    map@5: 0.0103    map@10: 0.0118    map@20: 0.0131    map@50: 0.0145    
+Thu 07 May 2026 21:33:42 INFO ██ PA2PD--Best validation results updated!!!
+Thu 07 May 2026 21:33:47 INFO epoch 1 training [time: 4.94s, train loss: 54.8554]

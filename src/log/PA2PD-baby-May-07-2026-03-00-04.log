@@ -1,0 +1,44 @@
+Thu 07 May 2026 03:00:04 INFO ██Server: 	ps
+Thu 07 May 2026 03:00:04 INFO ██Dir: 	/mnt/sda/XT/MENTOR_Firstpaper/src
+
+Thu 07 May 2026 03:00:04 INFO Start 0-th training!!
+Thu 07 May 2026 03:00:04 INFO baby
+The number of users: 19445
+Average actions of users: 8.269066598097197
+The number of items: 7050
+Average actions of items: 22.807375886524824
+The number of inters: 160792
+The sparsity of the dataset: 99.8827082752043%
+Thu 07 May 2026 03:00:04 INFO 
+====Training====
+baby
+The number of users: 19445
+Average actions of users: 6.096734379017742
+The number of items: 7047
+Average actions of items: 16.82290336313325
+The number of inters: 118551
+The sparsity of the dataset: 99.9134846831415%
+Thu 07 May 2026 03:00:04 INFO 
+====Validation====
+baby
+The number of users: 19445
+Average actions of users: 1.0572897917202366
+The number of items: 5483
+Average actions of items: 3.749589640707642
+The number of inters: 20559
+The sparsity of the dataset: 99.98071694707788%
+Thu 07 May 2026 03:00:04 INFO 
+====Testing====
+baby
+The number of users: 19445
+Average actions of users: 1.1150424273592183
+The number of items: 5549
+Average actions of items: 3.907370697422959
+The number of inters: 21682
+The sparsity of the dataset: 99.97990552482683%
+Thu 07 May 2026 03:00:05 INFO 
+
+=================================
+
+
+Thu 07 May 2026 03:00:05 INFO =========1/1: Parameters:['reg_weight', 'learning_rate', 'dropout', 'mask_weight_g', 'align_weight', 'temp', 'seed']=(0.001, 0.0001, 0.5, 0.001, 0.1, 0.2, 999)=======
