@@ -40,8 +40,18 @@ python main.py -m PA2PD -d clothing
 
 Please make sure that the dataset specified by `-d` is consistent with the active configuration in `src/configs/model/PA2PD.yaml`.
 ## Datasets
+We evaluate PA²PD on three public multimodal recommendation datasets: Baby, Sports, and Clothing.
 
-We evaluate PA²PD on three public multimodal recommendation datasets:
+The processed datasets and pre-extracted multimodal features can be downloaded from:
+- [Baby/Sports/Clothing](https://drive.google.com/drive/folders/1tU4IxYbLXMkp_DbIOPGvCry16uPvolLk)
+Please place the downloaded datasets under the `data/` directory:
+
+```text
+data/
+├── baby/
+├── sports/
+└── clothing/
+```
 
 | Dataset | # Users | # Items | # Interactions | Sparsity | Modality |
 |:--|--:|--:|--:|--:|:--|
