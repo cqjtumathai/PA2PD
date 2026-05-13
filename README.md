@@ -63,3 +63,8 @@ Following previous multimodal recommendation studies, we use publicly released p
 
 - Visual feature dimension: `4096`
 - Textual feature dimension: `384`
+
+
+## Acknowledgement
+
+This code is developed based on the implementation of [MENTOR](https://github.com/Jinfeng-Xu/MENTOR). We sincerely thank the authors of MENTOR for their excellent work and for making their code publicly available, which provides an important foundation for this project.
