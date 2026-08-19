@@ -70,3 +70,15 @@ Please make sure that the dataset specified by `-d` is consistent with the activ
 ## Acknowledgement
 
 This code is developed based on the implementation of [MENTOR](https://github.com/Jinfeng-Xu/MENTOR). We sincerely thank the authors of MENTOR for their excellent work and for making their code publicly available, which provides an important foundation for this project.
+
+
+If you find this work useful, please cite our paper:
+```bibtex
+@article{xiong2026pseudo,
+  title={Pseudo adversarial alignment and preference decorrelation model for multimodal recommendation},
+  author={Xiong, Tao and Yang, Mingming and Cao, Wenming and Li, Man and Zhang, Wenda and Yu, Zhiwen and Wong, Hau-San},
+  journal={Information Sciences},
+  pages={123792},
+  year={2026},
+  publisher={Elsevier}
+}
