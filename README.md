@@ -76,7 +76,7 @@ If you find this work useful, please cite our paper:
 ```bibtex
 @article{xiong2026pseudo,
   title={Pseudo adversarial alignment and preference decorrelation model for multimodal recommendation},
-  author={Xiong, Tao and Yang, Mingming and Cao, Wenming and Li, Man and Zhang, Wenda and Yu, Zhiwen and Wong, Hau-San},
+  author={Tao Xiong, Mingming Yang, Wenming Cao, Man Li, Wenda Zhang, Zhiwen Yu, Hau-San Wong},
   journal={Information Sciences},
   pages={123792},
   year={2026},
